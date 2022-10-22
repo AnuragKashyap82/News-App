@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/cardView"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/mainHeading"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="Main headind bfwbf uiqwrhfiuqweghfbuic bhuerwgew hwegfyqgfMain headind bfwbf uiqwrhfiuqweghfbuic bhuerwgew hwegfyqgf nerygiu"
+                android:textSize="20dp"
+                android:fontFamily="@font/nuniti_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:maxLines="6"
+                    android:id="@+id/content"
+                    android:fontFamily="@font/nunito_light"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:text="bduifbquifbdiuffnjf"
+                    android:ellipsize="end"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:background="@drawable/logo"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="By Anurag kashyap"
+                android:fontFamily="@font/nunito_light"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="Published At"
+                android:fontFamily="@font/nuniti_bold"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
